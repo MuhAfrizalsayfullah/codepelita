@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pendaftaran</title>
+  </head>
+  <body>
+    <h1>FORMULIR PENDAFTARAN</h1>
+
+    <form>
+      <label for="name">nama siswa</label><br />
+      <input type="text" id="nama" name="nama siswa" placeholder="nama lengkap" /><br />
+      <label for="tempat">tempat lahir</label><br />
+      <input type="text" id="tempat" name="tempat lahir" placeholder="tempat lahir" /><br />
+      <label for="tanggal">tanggal lahir</label><br />
+      <input type="text" id="tanggal" name="tanggal lahir" placeholder="tanggal lahir" /><br />
+      <label for="alamat">alamat lengkap</label><br />
+      <textarea name="alamat lengkap" id="alamat" cols="30" rows="5" placeholder="alamat lengkap"></textarea><br />
+      <label for="hp">no.hp siswa</label><br />
+      <input type="text" id="hp" name="no.hp siswa" placeholder="nomer hp siswa" /><br />
+      <label for="jurusan">pilihan jurusan</label><br />
+      <select name="jurusan" id="jurusan">
+        <option disabled="" selected="">-pilih jurusan-</option>
+        <option value="TJKT">TJKT(teknik jaringan komputer & telekomunikasi)</option>
+        <option value="PPLG">PPLG(pemrograman perangkat lunak & gim)</option>
+        <option value="TKRO">TKRO(teknik kendaraan ringan otomotif)</option>
+        <option value="TBSM">TBSM(teknik bisnis & sepeda motor)</option>
+        <option value="TB">TB(tata busana)</option></select
+      ><br />
+      <label for="pendaftaran">jalur pendaftaran</label><br />
+      <select name="pendaftaran" id="pendaftaran">
+        <option disabled="" selected="">-pilih jalur pendaftaran-</option>
+        <option value="reguler">reguler</option>
+        <option value="prestasi akademik">prestasi akademik</option>
+        <option value="prestasi non akademik">prestasi non akademik</option>
+        <option value="prestasi agama">prestasi agama</option></select
+      ><br />
+      <label for="sekolah">nama sekolah asal</label><br />
+      <input type="text" id="sekolah" name="nama asal sekolah" placeholder="nama asal sekolah" /><br />
+      <label for="asal">alamat sekolah asal</label><br />
+      <textarea name="alamat sekolah asal" id="asal" cols="30" rows="5" placeholder="alamat asal sekolah"></textarea><br />
+      <label for="info">dimana anda mendapat info tentang SMK SYAFI'I AKROM?</label><br />
+      <select name="dimana anda mendapat info tentang SMK SYAFI'I AKROM?" id="info">
+        <option disabled="" selected="">-pilih sumber info-</option>
+        <option value="sosialisasi">sosialisasi SMKSA ke SMP</option>
+        <option value="teman">teman</option>
+        <option value="kakak kelas">kakak kelas</option>
+        <option value="alumni">alumni SMKSA</option>
+        <option value="tetangga">tetangga</option>
+        <option value="saudara">saudara</option>
+        <option value="facebook">facebook</option>
+        <option value="instagram">instagram</option></select
+      ><br />
+      <input type="submit" value="simpan data" />
+    </form>
+  </body>
+</html>
