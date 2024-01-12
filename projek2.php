@@ -1,6 +1,6 @@
 <?php
-    $link = mysqli_connect("localhost","root","","pendaftaran");
-    $conn = mysqli_query($link, "SELECT * FROM pendaftaran");
+    $file = mysqli_connect("localhost","root","","pendaftaran");
+    $data = mysqli_query($file, "SELECT * FROM pendaftaran");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,13 +19,13 @@
             <th>alamat</th>
             <th>no. hp</th>
             <th>jurusan</th>
-            <th>jalur</th>
-            <th>sekolah asal</th>
+            <th>jalur pendaftaran</th>
+            <th>nama sekolah asal</th>
             <th>alamat sekolah asal</th>
             <th>mendapat info</th>
         </tr>
         <?php $i = 1;?>
-        <?php while ($calon = mysqli_fetch_assoc($conn)):?>
+        <?php while ($calon = mysqli_fetch_assoc($data)):?>
         <tr>
             <td><?= $i; ?></td>
             <td><?= $calon["nama"]; ?></td>
